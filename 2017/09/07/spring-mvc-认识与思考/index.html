@@ -6,16 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>postName | Leagle</title>
+  <title>spring mvc 认识与思考 | Leagle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="test">
+  <meta name="description" content="关于spring mvc的一些认识与思考。">
+<meta name="keywords" content="spring,mvc">
 <meta property="og:type" content="article">
-<meta property="og:title" content="postName">
-<meta property="og:url" content="http://yoursite.com/2017/09/04/postName/index.html">
+<meta property="og:title" content="spring mvc 认识与思考">
+<meta property="og:url" content="http://yoursite.com/2017/09/07/spring-mvc-认识与思考/index.html">
 <meta property="og:site_name" content="Leagle">
-<meta property="og:updated_time" content="2017-09-04T16:27:14.000Z">
+<meta property="og:description" content="关于spring mvc的一些认识与思考。">
+<meta property="og:updated_time" content="2017-09-06T16:41:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="postName">
+<meta name="twitter:title" content="spring mvc 认识与思考">
+<meta name="twitter:description" content="关于spring mvc的一些认识与思考。">
   
     <link rel="alternative" href="/atom.xml" title="Leagle" type="application/atom+xml">
   
@@ -156,27 +159,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-postName" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-spring-mvc-认识与思考" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      postName
+      spring mvc 认识与思考
     </h1>
   
 
         
-        <a href="/2017/09/04/postName/" class="archive-article-date">
-  	<time datetime="2017-09-04T09:59:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-04</time>
+        <a href="/2017/09/07/spring-mvc-认识与思考/" class="archive-article-date">
+  	<time datetime="2017-09-06T16:24:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>关于spring mvc的一些认识与思考。</p>
+<a id="more"></a>
+<h2 id="spring-mvc-的认识"><a href="#spring-mvc-的认识" class="headerlink" title="spring mvc 的认识"></a>spring mvc 的认识</h2><h3 id="运行原理"><a href="#运行原理" class="headerlink" title="运行原理"></a>运行原理</h3><p>1) HTTP请求：得到http请求之后，客户端将请求提交到DispatcherServlet。</p>
+<p>2）寻找处理器(Controller): 由DispatcherServlet来寻找一个或者多个HandlerMapping，找到处理请求的Controller。</p>
+<p>3）调用处理器(Controller): DispatcherServlet将请求提交到寻找到的Controller。</p>
+<p>4)5) 调用业务处理和返回结果: Controller调用业务处理逻辑(包含一些Service的处理)处理后，返回ModelAndView。</p>
+<p>6)7) 处理视图映射并返回模型: DispatcherServlet查询一个或者多个ViewResolver视图解析器，找到ModelAndView指定的视图。</p>
+<p>8) HTTP响应: 视图负责将结果显示到客户端。</p>
+
       
 
       
@@ -210,7 +221,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">test</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">spring</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">mvc</a>
         		</li>
       		
 		</ul>
@@ -266,7 +281,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/04/postName/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/07/spring-mvc-认识与思考/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,18 +295,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/09/07/spring-mvc-认识与思考/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          spring mvc 认识与思考
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/04/My-New-Post/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">My New Post</div>
+    <a href="/2017/09/04/postName/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">postName</div>
       <i class="icon-circle-right"></i>
     </a>
   
